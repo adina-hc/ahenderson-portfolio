@@ -46,6 +46,9 @@ window.addEventListener('resize', displayButton);
                 <NavLinks to="/">Home</NavLinks>
               </NavItem>
               <NavItem>
+                <NavLinks to="/about">About</NavLinks>
+              </NavItem>
+              <NavItem>
                 <NavLinks to="/projects">Projects</NavLinks>
               </NavItem>
               <NavItem>
@@ -56,13 +59,13 @@ window.addEventListener('resize', displayButton);
               </NavItem>
               <NavItemBtn>
                 {button ? (
-                  <NavBtnLink to="/sign-up">
-                    <Button primary>SIGN UP</Button>
+                  <NavBtnLink to="/sign-in">
+                    <Button primary>SIGN IN</Button>
                   </NavBtnLink>
                 ) : (
-                  <NavBtnLink to="/sign-up">
+                  <NavBtnLink to="/sign-in">
                     <Button fontBig primary>
-                      SIGN UP
+                      SIGN IN
                     </Button>
                   </NavBtnLink>
                 )}
