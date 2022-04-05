@@ -2,13 +2,13 @@ import React from 'react';
 import GlobalStyle from './globalStyles'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
-import About from './pages/Home/About';
+import About from './pages/About/About';
 import Projects from './pages/Projects/Projects';
 import Contact from './pages/Contact/Contact';
 import Resume from './pages/Resume/Resume';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
 
-import { Navbar   } from './components';
+import { Navbar, Footer  } from './components';
 
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
         <Route path="/resume" element={<Resume />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-      
+      <Footer />
     </Router>
   );
 }
